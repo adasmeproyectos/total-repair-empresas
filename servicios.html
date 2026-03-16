@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Servicios y Especialidades | Total Repair Ltda.</title>
+    
+    <meta name="description" content="Abarcamos toda la gama de servicios, desde la planificación del proyecto arquitectónico a su construcción final. Atención de emergencias corporativas.">
+    <meta name="theme-color" content="#1E3A8A" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        h1, h2, h3, h4, h5 { font-family: 'Outfit', sans-serif; }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.98);
+            border-bottom: 1px solid rgba(229, 231, 235, 0.8);
+        }
+    </style>
+  </head>
+  <body class="text-corporate-gray bg-white antialiased overflow-x-hidden">
+    
+    <nav class="glass-nav fixed w-full z-50 transition-all duration-300 shadow-sm">
+        <div class="w-full px-4 lg:px-12 max-w-7xl mx-auto">
+            <div class="flex justify-between items-center h-24">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html">
+                        <img src="https://placehold.co/300x80/1E3A8A/ffffff.png?text=TOTAL+REPAIR" class="h-12 md:h-14" alt="Logo Total Repair">
+                    </a>
+                </div>
+                
+                <div class="hidden lg:flex space-x-10 items-center">
+                    <a href="index.html" class="text-gray-600 font-semibold text-sm uppercase tracking-wider hover:text-corporate-blue transition border-b-2 border-transparent hover:border-corporate-blue pb-1">Inicio</a>
+                    <a href="nosotros.html" class="text-gray-600 font-semibold text-sm uppercase tracking-wider hover:text-corporate-blue transition border-b-2 border-transparent hover:border-corporate-blue pb-1">Sobre Nosotros</a>
+                    <a href="servicios.html" class="text-corporate-blue font-bold text-sm uppercase tracking-wider border-b-2 border-corporate-orange pb-1">Servicios y Especialidades</a>
+                    
+                    <a href="contacto.html" class="bg-corporate-blue text-white px-6 py-3 text-sm font-bold hover:bg-blue-900 transition flex items-center gap-2">
+                        <i class="fa-solid fa-briefcase"></i> <span>COTIZAR PROYECTO</span>
+                    </a>
+                </div>
+
+                <div class="lg:hidden">
+                    <button id="menu-btn" class="text-corporate-blue text-3xl focus:outline-none p-2">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t fixed w-full shadow-2xl h-[100dvh] z-40 top-24 overflow-y-auto">
+            <div class="flex flex-col p-6 space-y-2">
+                <a href="index.html" class="block py-4 text-xl font-bold text-gray-800 border-b border-gray-100">Inicio</a>
+                <a href="nosotros.html" class="block py-4 text-xl font-bold text-gray-800 border-b border-gray-100">Sobre Nosotros</a>
+                <a href="servicios.html" class="block py-4 text-xl font-bold text-corporate-blue border-b border-gray-100">Servicios</a>
+                <a href="contacto.html" class="block py-4 text-xl font-bold text-corporate-orange">Contacto Comercial</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-32 pb-16 lg:pt-40 lg:pb-20 bg-corporate-light border-b border-gray-200">
+        <div class="w-full px-4 lg:px-12 max-w-7xl mx-auto text-center" data-aos="fade-up">
+            <h1 class="text-4xl md:text-5xl font-black text-corporate-dark mb-4">Nuestros Servicios</h1>
+            <div class="h-1 w-20 bg-corporate-orange mx-auto mb-6"></div>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Abarcamos toda la gama de servicios, desde la planificación del proyecto a su construcción final.
+            </p>
+        </div>
+    </header>
+
+    <section class="py-20 bg-white">
+        <div class="w-full px-4 lg:px-12 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="bg-corporate-light p-10 border border-gray-200 border-t-4 border-t-corporate-blue group hover:shadow-lg transition" data-aos="fade-up">
+                <div class="w-14 h-14 bg-corporate-dark text-corporate-orange flex items-center justify-center text-2xl mb-8">
+                    <i class="fa-solid fa-compass-drafting"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-corporate-dark mb-2">Arquitectura</h2>
+                <h3 class="text-sm font-bold text-corporate-orange uppercase tracking-wider mb-4">Del borrador a la construcción final</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Trabajamos a la par con tu arquitecto o te proveemos el servicio. Te asesoramos, guiamos y colaboramos en cada etapa normativa y estructural para que tu obra cumpla con los estándares más exigentes y sea de tu total conformidad.
+                </p>
+            </div>
+            <div class="bg-corporate-light p-10 border border-gray-200 border-t-4 border-t-corporate-blue group hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="100">
+                <div class="w-14 h-14 bg-corporate-dark text-corporate-orange flex items-center justify-center text-2xl mb-8">
+                    <i class="fa-solid fa-pen-ruler"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-corporate-dark mb-2">Diseño Corporativo</h2>
+                <h3 class="text-sm font-bold text-corporate-orange uppercase tracking-wider mb-4">Trabajando con el espacio</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    El color, la textura y la integración del diseño con lo existente. Asesoramos tus ideas y te guiamos en la elección de materiales con proveedores de primera línea para obtener un resultado estético óptimo y al mejor precio del mercado.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-24 pb-32 bg-corporate-dark text-white overflow-hidden">
+        <div class="w-full px-4 lg:px-12 max-w-7xl mx-auto">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-4">Especialidades de Ejecución</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">
+                    Todo lo que tu proyecto involucra, Total Repair lo hace para ti. Coordinamos todos los gremios bajo una misma supervisión.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-10 text-center">
+                <div class="p-8 border border-gray-700 border-t-4 border-t-corporate-blue hover:border-corporate-orange transition" data-aos="fade-up" data-aos-delay="0">
+                    <i class="fa-solid fa-hammer text-4xl text-corporate-orange mb-4"></i>
+                    <h3 class="font-bold">Carpintería</h3>
+                </div>
+                <div class="p-8 border border-gray-700 border-t-4 border-t-corporate-blue hover:border-corporate-orange transition" data-aos="fade-up" data-aos-delay="50">
+                    <i class="fa-solid fa-paint-roller text-4xl text-corporate-orange mb-4"></i>
+                    <h3 class="font-bold">Pintura Alta Gama</h3>
+                </div>
+                <div class="p-8 border border-gray-700 border-t-4 border-t-corporate-blue hover:border-corporate-orange transition" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fa-solid fa-border-all text-4xl text-corporate-orange mb-4"></i>
+                    <h3 class="font-bold">Porcelanatos & Cerámicas</h3>
+                </div>
+                <div class="p-8 border border-gray-700 border-t-4 border-t-corporate-blue hover:border-corporate-orange transition" data-aos="fade-up" data-aos-delay="150">
+                    <i class="fa-solid fa-bolt text-4xl text-corporate-orange mb-4"></i>
+                    <h3 class="font-bold">Electricidad SEC</h3>
+                </div>
+                <div class="p-8 border border-gray-700 border-t-4 border-t-corporate-blue hover:border-corporate-orange transition" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fa-solid fa-network-wired text-4xl text-corporate-orange mb-4"></i>
+                    <h3 class="font-bold">Redes de Datos</h3>
+                </div>
+                <div class="p-8 border border-gray-700 border-t-4 border-t-corporate-blue hover:border-corporate-orange transition" data-aos="fade-up" data-aos-delay="250">
+                    <i class="fa-regular fa-window-maximize text-4xl text-corporate-orange mb-4"></i>
+                    <h3 class="font-bold">Cristales y Ventanales</h3>
+                </div>
+                <div class="p-8 border border-gray-700 border-t-4 border-t-corporate-blue hover:border-corporate-orange transition" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fa-solid fa-fire-burner text-4xl text-corporate-orange mb-4"></i>
+                    <h3 class="font-bold">Calefacción</h3>
+                </div>
+                <div class="p-8 border border-gray-700 border-t-4 border-t-corporate-blue hover:border-corporate-orange transition" data-aos="fade-up" data-aos-delay="350">
+                    <i class="fa-solid fa-snowflake text-4xl text-corporate-orange mb-4"></i>
+                    <h3 class="font-bold">Aire Acondicionado</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white relative overflow-hidden">
+        <div class="w-full px-4 lg:px-12 max-w-7xl mx-auto">
+            <div class="mb-12" data-aos="fade-right">
+                <div class="inline-block bg-red-600 text-white px-4 py-1 font-bold text-sm uppercase tracking-wider mb-4 animate-pulse">Atención 24/7 Disponible</div>
+                <h2 class="text-4xl font-black text-corporate-dark mb-4">Manejo de Emergencias Corporativas</h2>
+                <h3 class="text-xl font-bold text-gray-500 uppercase">Inundación · Lluvia · Incendio · Sismo · Siniestros en General</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white border border-gray-200 border-t-4 border-t-corporate-blue shadow-sm overflow-hidden group" data-aos="fade-up">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=800&q=80" onerror="this.onerror=null; this.src='/img/fotos/dano-agua.jpg';" alt="Daños por agua" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-8">
+                        <div class="w-12 h-12 bg-corporate-dark text-corporate-orange flex items-center justify-center text-xl mb-6">
+                            <i class="fa-solid fa-house-flood-water"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-corporate-dark mb-3">Daños por Agua</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Ya sea por inundación, rotura de cañerías, agua lluvia o temporal. Reparamos en tiempo récord lugares habitados o vacíos, minimizando la pérdida operativa de tu empresa.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-gray-200 border-t-4 border-t-corporate-blue shadow-sm overflow-hidden group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-14929089284-41f8cf3ffd39?auto=format&fit=crop&w=800&q=80" onerror="this.onerror=null; this.src='/img/fotos/dano-incendio.jpg';" alt="Daños por incendio y reconstrucción estructural" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 graycale">
+                    </div>
+                    <div class="p-8">
+                        <div class="w-12 h-12 bg-corporate-dark text-corporate-orange flex items-center justify-center text-xl mb-6">
+                            <i class="fa-solid fa-fire"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-corporate-dark mb-3">Daños por Incendio</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Desde el retiro de escombros, despeje y recuperación de artefactos y superficies. Reparamos todos los daños que un amago o incendio puedan provocar, dejando la propiedad como nueva.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-gray-200 border-t-4 border-t-corporate-blue shadow-sm overflow-hidden group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=800&q=80" onerror="this.onerror=null; this.src='/img/fotos/otros-siniestros.jpg';" alt="Obras de reconstrucción" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-8">
+                        <div class="w-12 h-12 bg-corporate-dark text-corporate-orange flex items-center justify-center text-xl mb-6">
+                            <i class="fa-solid fa-house-crack"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-corporate-dark mb-3">Otros Siniestros</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Sismos, vandalismo, impactos vehiculares o nieve. Todo daño de emergencias tiene pronta asistencia y, si es necesario, <strong>en horario extendido por turnos</strong> para recuperar tu espacio en el menor tiempo posible.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center" data-aos="fade-up">
+                <a href="contacto.html" class="inline-flex items-center gap-3 bg-red-600 text-white px-8 py-4 font-bold hover:bg-red-700 transition shadow-lg uppercase tracking-wide text-sm">
+                    <i class="fa-solid fa-phone-volume text-lg"></i> Solicitar Asistencia de Emergencia
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-16 text-sm border-t-4 border-corporate-blue">
+        <div class="w-full px-4 lg:px-12 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="col-span-1 md:col-span-2">
+                <h4 class="text-white font-bold text-xl mb-6">Total Repair Ltda.</h4>
+                <p class="max-w-md leading-relaxed mb-6">
+                    Soluciones constructivas integrales para empresas. Entregamos la administración y supervisión total del proyecto garantizando el cumplimiento logístico y administrativo.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold uppercase tracking-wider mb-6">Contacto Directo</h4>
+                <ul class="space-y-4">
+                    <li class="flex items-start gap-3"><i class="fa-solid fa-location-dot mt-1 text-corporate-orange"></i> Villasana 1398, Quinta Normal</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-phone text-corporate-orange"></i> (+56) 9 9919 5521</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-envelope text-corporate-orange"></i> contacto@totalrepair.cl</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold uppercase tracking-wider mb-6">Divisiones</h4>
+                <ul class="space-y-3">
+                    <li><a href="index.html" class="hover:text-white transition">Empresas (B2B)</a></li>
+                    <li><a href="https://www.totalconstruye.cl" target="_blank" class="hover:text-white transition">Hogar (Total Construye) <i class="fa-solid fa-arrow-up-right-from-square text-xs ml-1"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="w-full px-4 lg:px-12 max-w-7xl mx-auto mt-12 pt-8 border-t border-gray-800 text-center text-xs">
+            <p>© 2026 Total Repair Ltda. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

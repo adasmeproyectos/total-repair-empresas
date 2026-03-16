@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Total Repair | División Empresas y Licitaciones</title>
+    
+    <meta name="description" content="Servicios integrales de construcción, reparación y remodelación para empresas, locales comerciales y centros médicos.">
+    <meta name="theme-color" content="#1E3A8A" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        h1, h2, h3, h4, h5 { font-family: 'Outfit', sans-serif; }
+        
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.98);
+            border-bottom: 1px solid rgba(229, 231, 235, 0.8);
+        }
+        
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-scroll {
+            animation: scroll 40s linear infinite;
+            display: flex;
+            width: max-content;
+        }
+    </style>
+  </head>
+  <body class="text-corporate-gray bg-corporate-light antialiased overflow-x-hidden">
+    
+    <nav class="glass-nav fixed w-full z-50 transition-all duration-300 shadow-sm">
+        <div class="w-full px-4 lg:px-12 max-w-7xl mx-auto">
+            <div class="flex justify-between items-center h-24">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html">
+                        <img src="https://placehold.co/300x80/1E3A8A/ffffff.png?text=TOTAL+REPAIR" class="h-12 md:h-14" alt="Logo Total Repair">
+                    </a>
+                </div>
+                
+                <div class="hidden lg:flex space-x-10 items-center">
+                    <a href="index.html" class="text-corporate-blue font-bold text-sm uppercase tracking-wider border-b-2 border-corporate-orange pb-1">Inicio</a>
+                    <a href="nosotros.html" class="text-gray-600 font-semibold text-sm uppercase tracking-wider hover:text-corporate-blue transition border-b-2 border-transparent hover:border-corporate-blue pb-1">Sobre Nosotros</a>
+                    <a href="servicios.html" class="text-gray-600 font-semibold text-sm uppercase tracking-wider hover:text-corporate-blue transition border-b-2 border-transparent hover:border-corporate-blue pb-1">Servicios y Especialidades</a>
+                    
+                    <a href="contacto.html" class="bg-corporate-blue text-white px-6 py-3 text-sm font-bold hover:bg-blue-900 transition flex items-center gap-2">
+                        <i class="fa-solid fa-briefcase"></i> <span>COTIZAR PROYECTO</span>
+                    </a>
+                </div>
+
+                <div class="lg:hidden">
+                    <button id="menu-btn" class="text-corporate-blue text-3xl focus:outline-none p-2">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t fixed w-full shadow-2xl h-[100dvh] z-40 top-24 overflow-y-auto">
+            <div class="flex flex-col p-6 space-y-2">
+                <a href="index.html" class="block py-4 text-xl font-bold text-corporate-blue border-b border-gray-100">Inicio</a>
+                <a href="nosotros.html" class="block py-4 text-xl font-bold text-gray-800 border-b border-gray-100">Sobre Nosotros</a>
+                <a href="servicios.html" class="block py-4 text-xl font-bold text-gray-800 border-b border-gray-100">Servicios</a>
+                <a href="contacto.html" class="block py-4 text-xl font-bold text-corporate-orange">Contacto Comercial</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative pt-32 pb-20 md:pt-40 md:pb-32 bg-corporate-dark overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2000&auto=format&fit=crop" onerror="this.onerror=null; this.src='/img/fotos/hero-corporativo.jpg';" alt="Edificio Corporativo" class="w-full h-full object-cover opacity-30">
+        </div>
+        
+        <div class="w-full px-4 lg:px-12 max-w-7xl mx-auto relative z-10">
+            <div class="max-w-3xl">
+                <div class="flex items-center gap-3 mb-6" data-aos="fade-right">
+                    <div class="h-1 w-12 bg-corporate-orange"></div>
+                    <span class="text-white font-bold uppercase tracking-widest text-sm">División Empresas e Instituciones</span>
+                </div>
+                <h1 class="text-4xl md:text-6xl font-black text-white leading-tight mb-6" data-aos="fade-up" data-aos-delay="100">
+                    CONSTRUIMOS TUS PROYECTOS. <br>
+                    <span class="text-corporate-orange">SIN DEMORAS.</span>
+                </h1>
+                <p class="text-xl text-gray-300 mb-10 leading-relaxed font-light" data-aos="fade-up" data-aos-delay="200">
+                    Tu espacio listo para funcionar. Sin complicaciones. Especialistas en remodelación, reparación y habilitación de locales comerciales y oficinas con 20 años de experiencia.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4" data-aos="fade-up" data-aos-delay="300">
+                    <a href="contacto.html" class="bg-corporate-orange text-white px-8 py-4 font-bold hover:bg-orange-600 transition text-center uppercase tracking-wide text-sm">
+                        Agendar Reunión Técnica
+                    </a>
+                    <a href="servicios.html" class="bg-transparent border-2 border-white text-white px-8 py-4 font-bold hover:bg-white hover:text-corporate-dark transition text-center uppercase tracking-wide text-sm">
+                        Ver Nuestras Especialidades
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-12 bg-white border-b border-gray-200 overflow-hidden">
+        <div class="w-full px-4 lg:px-12 max-w-7xl mx-auto">
+            <p class="text-center text-xs font-bold text-gray-400 uppercase tracking-widest mb-8">Empresas e Instituciones que confían en nuestra gestión</p>
+            <div class="relative flex overflow-x-hidden group">
+                <div class="animate-scroll items-center gap-16 md:gap-24 px-8">
+                    <img src="/img/logos/claro.png" alt="Claro" class="h-10 object-contain grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                    <img src="/img/logos/wom.png" alt="Wom" class="h-10 object-contain grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                    <img src="/img/logos/enjoy.png" alt="Enjoy" class="h-10 object-contain grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                    <img src="/img/logos/usm.png" alt="UTFSM" class="h-12 object-contain grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                    <img src="/img/logos/duoc.png" alt="DuocUC" class="h-10 object-contain grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                    
+                    <img src="/img/logos/claro.png" alt="Claro" class="h-10 object-contain grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                    <img src="/img/logos/wom.png" alt="Wom" class="h-10 object-contain grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                    <img src="/img/logos/enjoy.png" alt="Enjoy" class="h-10 object-contain grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                    <img src="/img/logos/usm.png" alt="UTFSM" class="h-12 object-contain grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                    <img src="/img/logos/duoc.png" alt="DuocUC" class="h-10 object-contain grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-corporate-light">
+        <div class="w-full px-4 lg:px-12 max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div data-aos="fade-up">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-corporate-dark mb-6">Reparar y modificar espacios comerciales es nuestra especialidad.</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed text-lg">
+                        Ponemos máxima atención en los detalles. Desde el plano arquitectónico hasta la construcción final, garantizamos que tus operaciones no se detengan.
+                    </p>
+                    <div class="grid grid-cols-2 gap-8 mt-10">
+                        <div class="border-l-4 border-corporate-blue pl-4">
+                            <p class="text-3xl font-black text-corporate-blue">20+</p>
+                            <p class="text-sm font-bold text-gray-500 uppercase mt-1">Años de Excelencia</p>
+                        </div>
+                        <div class="border-l-4 border-corporate-orange pl-4">
+                            <p class="text-3xl font-black text-corporate-orange">ACHS</p>
+                            <p class="text-sm font-bold text-gray-500 uppercase mt-1">Socio Estratégico</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative" data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1000&auto=format&fit=crop" onerror="this.onerror=null; this.src='/img/fotos/edificio-corporativo.jpg';" alt="Edificio moderno" class="shadow-2xl w-full object-cover h-[400px]">
+                    <div class="absolute -bottom-6 -left-6 bg-white p-6 border-t-4 border-corporate-blue shadow-lg">
+                        <p class="font-bold text-corporate-dark"><i class="fa-solid fa-shield-halved text-corporate-orange mr-2"></i> Seguros TRC Integrados</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white">
+        <div class="w-full px-4 lg:px-12 max-w-7xl mx-auto">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-corporate-dark mb-4">Áreas de Especialización</h2>
+                <div class="h-1 w-20 bg-corporate-orange mx-auto mb-6"></div>
+                <p class="text-gray-500 max-w-2xl mx-auto">Soluciones constructivas eficaces adaptadas a proyectos pequeños, medianos y de gran escala.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-corporate-light p-10 border border-gray-200 border-t-4 border-t-corporate-blue hover:shadow-xl hover:border-l-corporate-orange transition duration-300 group" data-aos="fade-up">
+                    <div class="w-14 h-14 bg-corporate-dark text-corporate-orange flex items-center justify-center text-2xl mb-8 transition">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-corporate-dark mb-3">Centros Comerciales</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-8">Habilitación de locales, centros médicos y sucursales. Remodelamos para que tu negocio crezca.</p>
+                    <a href="servicios.html" class="text-corporate-blue font-bold text-sm uppercase tracking-wide group-hover:text-corporate-orange transition">Ver Detalle <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                </div>
+                
+                <div class="bg-corporate-light p-10 border border-gray-200 border-t-4 border-t-corporate-blue hover:shadow-xl hover:border-l-corporate-orange transition duration-300 group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-14 h-14 bg-corporate-dark text-corporate-orange flex items-center justify-center text-2xl mb-8 transition">
+                        <i class="fa-solid fa-helmet-safety"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-corporate-dark mb-3">Construcción y Reparación</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-8">Mantenimiento de techos, pisos y muros. Trabajos en altura y zonas de alta circulación.</p>
+                    <a href="servicios.html" class="text-corporate-blue font-bold text-sm uppercase tracking-wide group-hover:text-corporate-orange transition">Ver Detalle <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                </div>
+                
+                <div class="bg-corporate-light p-10 border border-gray-200 border-t-4 border-t-corporate-blue hover:shadow-xl hover:border-l-corporate-orange transition duration-300 group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-14 h-14 bg-corporate-dark text-corporate-orange flex items-center justify-center text-2xl mb-8 transition">
+                        <i class="fa-solid fa-couch"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-corporate-dark mb-3">Zonas de Recreo (Co-work)</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-8">Diseño de espacios que combinan descanso y productividad para mejorar el rendimiento laboral.</p>
+                    <a href="servicios.html" class="text-corporate-blue font-bold text-sm uppercase tracking-wide group-hover:text-corporate-orange transition">Ver Detalle <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-corporate-dark text-white py-16 relative overflow-hidden" data-aos="fade-up">
+        <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 20px 20px;"></div>
+        
+        <div class="w-full px-4 lg:px-12 max-w-7xl mx-auto relative z-10 flex flex-col lg:flex-row items-center justify-between gap-10">
+            <div>
+                <div class="flex items-center gap-4 mb-4">
+                    <span class="bg-red-600 text-white text-xs font-bold px-3 py-1 uppercase tracking-widest border border-red-500">Atención Inmediata</span>
+                </div>
+                <h2 class="text-3xl font-black mb-3">Siniestros y Emergencias Corporativas</h2>
+                <p class="text-gray-300 max-w-2xl text-lg">Inundaciones, daños por fuego, sismos o rotura de matrices. Preparamos el espacio y generamos presupuestos directos para tu aseguradora.</p>
+            </div>
+            <a href="contacto.html" class="bg-transparent border-2 border-corporate-orange text-corporate-orange hover:bg-corporate-orange hover:text-white px-8 py-4 font-bold transition flex items-center gap-3 shrink-0 uppercase tracking-wide text-sm">
+                <i class="fa-solid fa-phone-volume text-xl"></i> Contactar Unidad de Emergencia
+            </a>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-16 text-sm border-t-4 border-corporate-blue">
+        <div class="w-full px-4 lg:px-12 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="col-span-1 md:col-span-2">
+                <h4 class="text-white font-bold text-xl mb-6">Total Repair Ltda.</h4>
+                <p class="max-w-md leading-relaxed mb-6">
+                    Soluciones constructivas integrales para empresas. Entregamos la administración y supervisión total del proyecto garantizando el cumplimiento logístico y administrativo.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold uppercase tracking-wider mb-6">Contacto Directo</h4>
+                <ul class="space-y-4">
+                    <li class="flex items-start gap-3"><i class="fa-solid fa-location-dot mt-1 text-corporate-orange"></i> Villasana N° 1398, Quinta Normal</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-phone text-corporate-orange"></i> (+56) 9 9919 5521</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-envelope text-corporate-orange"></i> contacto@totalrepair.cl</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold uppercase tracking-wider mb-6">Divisiones</h4>
+                <ul class="space-y-3">
+                    <li><a href="index.html" class="hover:text-white transition">Empresas (B2B)</a></li>
+                    <li><a href="https://www.totalconstruye.cl" target="_blank" class="hover:text-white transition">Hogar (Total Construye) <i class="fa-solid fa-arrow-up-right-from-square text-xs ml-1"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="w-full px-4 lg:px-12 max-w-7xl mx-auto mt-12 pt-8 border-t border-gray-800 text-center text-xs">
+            <p>&copy; 2026 Total Repair Ltda. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
